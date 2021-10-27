@@ -36,8 +36,8 @@ def draw(X, Y):
             new_depthes.append(depth) # 1m 
         else:
             if new_values[-1] != value:
-                new_values.append(value) # prev != next value일 경우, next value를 늘림
-                new_depthes.append(new_depthes[-1]) # prev != nex value일 경우, prev depth를 늘림
+                new_values.append(value)
+                new_depthes.append(new_depthes[-1])
             new_values.append(value)
             new_depthes.append(depth)
     return new_values, new_depthes    
