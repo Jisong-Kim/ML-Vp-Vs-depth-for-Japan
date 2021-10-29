@@ -94,7 +94,7 @@ part_open_file_kiknet = [[sg.Text('Open data file:'), sg.In(size=(30,), key='-FB
                           sg.Frame(layout=[[sg.Canvas(size=(400, 400), key='-FB7-')]],
                                    title='Figure', title_color='white')]]
 
-tabgrp = [[sg.TabGroup([[sg.Tab('K-net', part_open_file_knet, border_width =10, ),
+tabgrp = [[sg.TabGroup([[sg.Tab('K-NET', part_open_file_knet, border_width =10, ),
                         sg.Tab('KiK-net', part_open_file_kiknet, border_width =10, ),
                         sg.Tab('Author Profile', part_profile)]],
                        )]] 
