@@ -3,7 +3,7 @@
   ---K-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/138652758-42d7e805-f381-40b9-8496-90017793b5b1.png">  
+<img width="500" src="https://user-images.githubusercontent.com/54570998/139394224-8ff4dbad-68aa-4de8-a192-a1ff5660ef63.png">  
 </p>
 
 <div align="center">
