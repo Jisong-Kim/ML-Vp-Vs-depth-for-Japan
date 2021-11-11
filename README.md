@@ -13,11 +13,13 @@
 <img width="500" src="https://user-images.githubusercontent.com/54570998/138653838-d4f23107-ea9b-4b66-8f8e-5b2a2ee1cd83.png">
 </p>
 
+Software developed by Jisong Kim
+
 Written on the python 3.7.0
 
 # How to run
 1. Download all files and put them in the same folder.
-2. Open CMD and type [python main_japan_vp_vs.py]
+2. Open CMD and type [python [**file path**]\main_japan_vp_vs.py]
 
 # Library requireed
 1. PySimpleGUI == 4.49.0
