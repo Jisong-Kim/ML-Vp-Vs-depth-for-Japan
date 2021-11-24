@@ -31,12 +31,12 @@ def draw(X, Y):
         if num == 0:
             new_values.append(value)
             new_depthes.append(0)
-            new_values.append(value)
-            new_depthes.append(depth) 
+            new_values.append(value) # 1m
+            new_depthes.append(depth) # 1m 
         else:
             if new_values[-1] != value:
-                new_values.append(value)
-                new_depthes.append(new_depthes[-1])
+                new_values.append(value) # prev != next value일 경우, next value를 늘림
+                new_depthes.append(new_depthes[-1]) # prev != nex value일 경우, prev depth를 늘림
             new_values.append(value)
             new_depthes.append(depth)
     return new_values, new_depthes    
@@ -55,7 +55,7 @@ def draw_config(ax):
     ax.tick_params(axis = 'both', labelsize=12, which = 'major', length=5, width=0.5) 
     ax.tick_params(axis = 'both', labelsize=12, which = 'minor', length=3, width=0.5) 
 
-    ax.invert_yaxis()
+    ax.invert_yaxis() # yaxis 거꾸로 
     ax.set_ylabel('Depth (m)', labelpad=7, fontsize=12, font='Arial')
     ax.set_xlabel(r'Velocity (km/s)', fontsize=12, font='Arial')
     ax.legend()  
@@ -63,13 +63,6 @@ def draw_config(ax):
 
 sg.theme('Dark Blue 3')
 
-part_profile = [[sg.Frame(layout=
-                  [
-                      [sg.Text('Software developed by Jisong Kim (jisong@unist.ac.kr)')],
-                      [sg.Text('Ulsan National Institute of Science and Technology (UNIST)')],
-                      [sg.Text('Ulsan, South Korea, 44919')]
-                  ], title='Profile', title_color='white')]]
-    
 part_A1 = sg.Frame(layout=
                   [
                       [sg.Text('Kim J, Kang J, Kim B (2022) Machine-learning models')],
@@ -116,9 +109,10 @@ part_open_file_kiknet = [[sg.Frame(layout=
                           sg.Frame(layout=[[sg.Canvas(size=(400, 400), key='-FB7-')]],
                                    title='Figure', title_color='white')]]
 
+
 tabgrp = [[sg.TabGroup([[sg.Tab('K-NET', part_open_file_knet, border_width =10, ),
                         sg.Tab('KiK-net', part_open_file_kiknet, border_width =10, ),
-                        sg.Tab('Author Profile', part_profile)]],
+                        ]],
                        )]] 
 
 window = sg.Window('Predict Vp, Vs in Japan', tabgrp)
