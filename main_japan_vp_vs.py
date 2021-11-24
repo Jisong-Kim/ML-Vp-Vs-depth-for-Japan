@@ -70,24 +70,46 @@ part_profile = [[sg.Frame(layout=
                       [sg.Text('Ulsan, South Korea, 44919')]
                   ], title='Profile', title_color='white')]]
     
-part_open_file_knet = [[sg.Text('Open data file:'), sg.In(size=(30,), key='-FA1-'), 
-                        sg.FileBrowse(), sg.Button('Open', key='-FA2-')],
-                       [sg.Text('Data processing result:'), sg.In(size=(20,), key='-FA3-')],
-                       [sg.Button('Predict', key='-FA4-'), sg.Button('Clear all', key='-FA5-')],
-                       [sg.Table(values=[[None, None]], 
-                           headings=['Depth (m)', 'Vp', 'Vs'], 
-                           num_rows=25, 
-                           auto_size_columns=False, 
-                           key='-FA6-'),
-                       sg.Frame(layout=[[sg.Canvas(size=(400, 400), key='-FA7-')]],
-                                title='Figure', title_color='white')]]
+part_A1 = sg.Frame(layout=
+                  [
+                      [sg.Text('Kim J, Kang J, Kim B (2022) Machine-learning models')],
+                      [sg.Text('to predict P- and S-wave velocity profiles for Japan.')],
+                      [sg.Text('Rock Mechanics and Rock Engineering.')],
+                      [sg.Text('Correspondence: byungmin.kim@unist.ac.kr')]
+                  ], title='Citation', title_color='white')
 
-part_open_file_kiknet = [[sg.Text('Open data file:'), sg.In(size=(30,), key='-FB1-'), 
-                          sg.FileBrowse(), sg.Button('Open', key='-FB2-')],
-                         [sg.Text('Data processing result:'), sg.In(size=(20,), key='-FB3-')],
-                         [sg.Button('Predict', key='-FB4-'), sg.Button('Clear all', key='-FB5-')],
+part_B1 = sg.Frame(layout=
+                  [
+                      [sg.Text('Kim J, Kang J, Kim B (2022) Machine-learning models')],
+                      [sg.Text('to predict P- and S-wave velocity profiles for Japan.')],
+                      [sg.Text('Rock Mechanics and Rock Engineering.')],
+                      [sg.Text('Correspondence: byungmin.kim@unist.ac.kr')]
+                  ], title='Citation', title_color='white')
+
+part_open_file_knet = [[sg.Frame(layout=
+                                 [[sg.Text('Input data file:'), sg.In(size=(20,), key='-FA1-'), 
+                                   sg.FileBrowse(), sg.Button('Open', key='-FA2-')],
+                                  [sg.Text('Data processing result:'), sg.In(size=(11,), key='-FA3-')],
+                                  [sg.Button('Predict', key='-FA4-'), sg.Button('Clear all', key='-FA5-')]], title=''),
+                        part_A1],
+                       
+                       [sg.Table(values=[[None, None]], 
+                                 headings=['Depth (m)', 'Vp (m/s)', 'Vs (m/s)'], 
+                                 num_rows=25, 
+                                 auto_size_columns=False, 
+                                 key='-FA6-'),
+                        sg.Frame(layout=[[sg.Canvas(size=(400, 400), key='-FA7-')]],
+                                 title='Figure', title_color='white')]]
+
+part_open_file_kiknet = [[sg.Frame(layout=   
+                                   [[sg.Text('Input data file:'), sg.In(size=(20,), key='-FB1-'), 
+                                     sg.FileBrowse(), sg.Button('Open', key='-FB2-')],
+                                    [sg.Text('Data processing result:'), sg.In(size=(11,), key='-FB3-')],
+                                    [sg.Button('Predict', key='-FB4-'), sg.Button('Clear all', key='-FB5-')]], title=''), 
+                          part_B1],
+
                          [sg.Table(values=[[None, None]], 
-                           headings=['Depth (m)', 'Vp', 'Vs'], 
+                           headings=['Depth (m)', 'Vp (m/s)', 'Vs (m/s)'], 
                            num_rows=25, 
                            auto_size_columns=False, 
                            key='-FB6-'),
