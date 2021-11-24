@@ -3,7 +3,7 @@
   ---K-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/139394224-8ff4dbad-68aa-4de8-a192-a1ff5660ef63.png">  
+<img width="500" src="https://user-images.githubusercontent.com/54570998/143153895-0392bb84-1d12-4034-8a33-3ebf937abfee.png">  
 </p>
 
 <div align="center">
@@ -16,6 +16,10 @@
 Software developed by Jisong Kim
 
 Written on the python 3.7.0
+
+# Geology list
+Under construction
+
 
 # How to run
 1. Download all files and put them in the same folder.
