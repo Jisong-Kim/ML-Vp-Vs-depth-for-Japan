@@ -10,7 +10,7 @@
   ---KiK-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/138653838-d4f23107-ea9b-4b66-8f8e-5b2a2ee1cd83.png">
+<img width="500" src="https://user-images.githubusercontent.com/54570998/143154637-03fd0aca-e7a1-4761-a7a3-90714a4aa4bf.png">
 </p>
 
 Software developed by Jisong Kim
