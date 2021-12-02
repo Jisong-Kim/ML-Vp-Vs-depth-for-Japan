@@ -18,9 +18,7 @@ Software developed by Jisong Kim
 Written on the python 3.7.0
 
 # Geology list
-Under construction
-
-Please see the Geology.csv files
+Please see the geology.xlsx
 
 # How to run
 1. Download all files and put them in the same folder.
