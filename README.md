@@ -1,16 +1,17 @@
 # Japan-Vp-Vs-depth-prediction
+
 <div align="center">
   ---K-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/143153895-0392bb84-1d12-4034-8a33-3ebf937abfee.png">  
+<img width="500" src="https://user-images.githubusercontent.com/54570998/159889676-5e7dfcad-6d7a-47b3-b4c4-d0fb8815922a.png">  
 </p>
 
 <div align="center">
   ---KiK-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/143154637-03fd0aca-e7a1-4761-a7a3-90714a4aa4bf.png">
+<img width="500" src="https://user-images.githubusercontent.com/54570998/159889703-290863e3-dcc8-48cc-abe0-9a164906c9a0.png">
 </p>
 
 Software developed by Jisong Kim
