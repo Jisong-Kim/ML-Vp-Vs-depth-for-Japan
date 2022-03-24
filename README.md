@@ -4,14 +4,14 @@
   ---K-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/159889676-5e7dfcad-6d7a-47b3-b4c4-d0fb8815922a.png">  
+<img width="500" src="https://user-images.githubusercontent.com/54570998/159890759-4f19f300-611b-4eec-aa1f-7422ba31199e.png">  
 </p>
 
 <div align="center">
   ---KiK-net---
 </div>
 <p align="center">
-<img width="500" src="https://user-images.githubusercontent.com/54570998/159889703-290863e3-dcc8-48cc-abe0-9a164906c9a0.png">
+<img width="500" src="https://user-images.githubusercontent.com/54570998/159890791-76dac3c5-545f-4e56-8b9f-f510b7b6a5bd.png">
 </p>
 
 Software developed by Jisong Kim
